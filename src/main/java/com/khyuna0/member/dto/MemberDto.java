@@ -14,5 +14,5 @@ public class MemberDto {
 	private String memberid;
 	private String memberpw;
 	private String membername;
-	private int age;
+	private int memberage;
 }
