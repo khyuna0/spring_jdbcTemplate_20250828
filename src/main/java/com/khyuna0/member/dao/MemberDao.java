@@ -43,11 +43,11 @@ public class MemberDao {
 		//return memberdto;
 		
 		// 바로 return 하기
+		// 가져올 레코드가 한 개일 때는 .queryForObject
 		return jdbctemplate.queryForObject(sql, new BeanPropertyRowMapper<MemberDto>(MemberDto.class),memberid);
 	}
 	
 	// SELECT 문 -> 회원 전체를 조회
-	
 	public List<MemberDto> searchMembers() {
 		String sql = "SELECT * FROM membertbl ";
 		// 가져올 레코드가 여러개일 때는 .query 사용
