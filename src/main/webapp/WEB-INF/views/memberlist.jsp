@@ -11,7 +11,7 @@
 	<h2>모든 회원 목록</h2>
 	<hr>
 	<c:forEach items="${mDtos }" var="mDtos" >
-		${mDtos.memberid }/${mDtos.memberpw }/${mDtos.membername }/${mDtos.memberage }
+		${mDtos.memberid }/${mDtos.memberpw }/${mDtos.membername }/${mDtos.memberage } <br><br>
 	</c:forEach>
 </body>
 </html>
